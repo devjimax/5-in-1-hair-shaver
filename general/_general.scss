@@ -1,0 +1,246 @@
+@mixin para {
+  font-size: var(--fontsmall);
+  text-align: center;
+  padding: var(--pad1);
+}
+@mixin formside {
+  font-size: 2rem;
+  padding: 1rem 0;
+  padding-left: 0.3rem;
+  border-radius: 0.4rem;
+}
+.section1 {
+  &__topHeading {
+    font-size: 5rem;
+    text-align: center;
+    padding: 5rem 0 2rem 0;
+  }
+  &__folHeading {
+    font-size: 4rem;
+    text-align: center;
+    padding: 0 0 2rem 0;
+  }
+  &__normalPa {
+    font-size: 1.5rem;
+    padding: 0 0 2rem 0;
+    text-align: center;
+  }
+  &__prod {
+    width: 80%;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 4rem;
+    position: relative;
+    margin: 100px auto 50px;
+
+    // i {
+    //   position: absolute;
+    //   top: 50%;
+    //   height: 4.6rem;
+    //   width: 4.6rem;
+    //   background-color: #fff;
+    //   font-size: 1.2rem;
+    //   line-height: 4.6rem;
+    //   color: #000;
+    //   text-align: center;
+    //   border-radius: 50%;
+    //   transform: translateY(-50%);
+    // }
+    // i:first-child {
+    //   left: -23px;
+    // }
+    // i:last-child {
+    //   right: -23px;
+    // }
+    // justify-content: space-between;
+    // width: 10rem;
+  }
+  &__fullwidth {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    img {
+      width: 90%;
+      max-width: 500px;
+    }
+    span {
+      position: absolute;
+      top: 5%;
+      right: 30%;
+      color: #fff;
+      font-size: 3rem;
+    }
+  }
+}
+.imagsize {
+  width: 25rem;
+  transition: 0.4s;
+  &:hover {
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+  }
+}
+.section2 {
+  &__paragraph {
+    @include para;
+  }
+}
+.imgcenter {
+  width: 80rem;
+  margin-left: 7rem;
+  padding: var(--pad1);
+}
+.videSize {
+  width: 80rem;
+  margin-left: 7rem;
+  padding: var(--pad1);
+}
+.section3 {
+  &__fontext {
+    display: flex;
+    // flex-direction: column;
+    &:not(last) {
+      margin-bottom: 1rem;
+    }
+
+    font-size: var(--fontsmall);
+    padding: 0 0 0 6rem;
+    span {
+      padding-left: 0.8rem;
+    }
+    .fa {
+      font-size: 2rem;
+      color: green;
+    }
+  }
+}
+.Heading {
+  font-size: var(--fontBig);
+  text-align: center;
+  padding: 0 0 2rem 0;
+  color: var(--headingColor);
+}
+
+.trimmer {
+  width: 80rem;
+  margin-left: 10rem;
+  padding: var(--pad1);
+}
+.section4 {
+  &__package {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    text-align: center;
+
+    &-card {
+      width: 30rem;
+      background-color: #fff;
+      border-radius: 1rem;
+      padding: 3rem 2rem;
+      &-heading1 {
+        font-size: 4rem;
+        color: var(--headingColor);
+        padding-bottom: 1rem;
+        text-transform: uppercase;
+      }
+      &-para1 {
+        @include para;
+        padding-top: 3rem;
+        font-weight: 400;
+      }
+      &-order {
+        display: flex;
+        margin: -2rem 7rem 0 7rem;
+        gap: 1rem;
+        font-size: 1.8rem;
+        align-items: center;
+        background-color: green;
+        border-radius: 1rem;
+
+        justify-content: center;
+      }
+      &-strike {
+        font-size: 2rem;
+        color: #e05050;
+        padding: 1rem 0;
+      }
+    }
+  }
+}
+.inner {
+  font-size: 2.5rem;
+  color: green;
+  padding: 2rem 0;
+}
+.imagWidth {
+  width: 20rem;
+  margin-left: 2rem;
+}
+.section5 {
+  &__drop1 {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 2rem;
+    margin-top: -1rem;
+  }
+  &__counter {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem 0;
+
+    &-count {
+      background-color: #e05050;
+      padding: 3rem;
+      border-radius: 2.5rem;
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+}
+.section6 {
+  padding: 3rem 0;
+  &__imagecard {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    &-card1 {
+      width: 25rem;
+      border-radius: 0.9rem;
+    }
+  }
+}
+.section7 {
+  &__form {
+    padding: 0 3rem;
+  }
+  &__forminfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    label {
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+    textarea {
+      font-size: 2rem;
+    }
+    input {
+      @include formside();
+    }
+    select {
+      @include formside();
+    }
+  }
+}

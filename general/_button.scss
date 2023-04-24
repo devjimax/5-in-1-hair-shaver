@@ -1,0 +1,38 @@
+@mixin button($mar) {
+  background-color: var(--btn);
+  font-size: var(--fontsmall);
+  color: #fff;
+  padding: 0.8rem;
+  margin-left: $mar;
+  border: 5px solid white;
+  border-radius: 1rem;
+}
+button a {
+  color: #fff;
+}
+.actionButton {
+  @include button(40rem);
+
+  .fa {
+    padding-right: 0.6rem;
+  }
+}
+.cardButton {
+  @include button(2rem);
+  .fa {
+    padding-right: 0.6rem;
+  }
+}
+.submission {
+  width: 70rem;
+  padding: 1.3rem;
+  margin-top: 1rem;
+  margin-left: 8rem;
+  background-color: green;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 1.5rem;
+  .fa {
+    padding-right: 0.6rem;
+  }
+}

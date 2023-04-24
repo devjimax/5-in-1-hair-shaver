@@ -1,0 +1,344 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: orangered;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+  background-color: var(--bgcolor);
+}
+
+.mar {
+  background-color: green;
+  font-size: 2rem;
+  text-align: center;
+  margin: -1rem 0;
+  padding: -2rem 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a,
+a:link,
+a:active {
+  text-decoration: none;
+}
+
+:root {
+  --background:orangered,
+  --fontcolor:#fff;
+  --bgcolor:#F6F8FB;
+  --pad1:0 0 3rem 0;
+  --fontBig:5rem;
+  --headingColor:#2963B2;
+  --fontsmall:1.6rem;
+  --btn:#FF6600;
+}
+
+.section1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/sassimage/hair-shaver-usages.jpeg");
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
+  color: #fff;
+  margin: 0 0 2rem 0;
+}
+
+.section2 {
+  padding: 0 2rem;
+}
+
+.section5 {
+  background-color: #eef1f8;
+}
+
+.section7 {
+  background-color: bisque;
+  padding: 2rem 0;
+}
+
+.section1__topHeading {
+  font-size: 5rem;
+  text-align: center;
+  padding: 5rem 0 2rem 0;
+}
+.section1__folHeading {
+  font-size: 4rem;
+  text-align: center;
+  padding: 0 0 2rem 0;
+}
+.section1__normalPa {
+  font-size: 1.5rem;
+  padding: 0 0 2rem 0;
+  text-align: center;
+}
+.section1__prod {
+  width: 80%;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding: 4rem;
+  position: relative;
+  margin: 100px auto 50px;
+}
+.section1__fullwidth {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.section1__fullwidth img {
+  width: 90%;
+  max-width: 500px;
+}
+.section1__fullwidth span {
+  position: absolute;
+  top: 5%;
+  right: 30%;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.imagsize {
+  width: 25rem;
+  transition: 0.4s;
+}
+.imagsize:hover {
+  transform: scale(0.8) rotate(-15deg);
+  border-radius: 20px;
+  box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+}
+
+.section2__paragraph {
+  font-size: var(--fontsmall);
+  text-align: center;
+  padding: var(--pad1);
+}
+
+.imgcenter {
+  width: 80rem;
+  margin-left: 7rem;
+  padding: var(--pad1);
+}
+
+.videSize {
+  width: 80rem;
+  margin-left: 7rem;
+  padding: var(--pad1);
+}
+
+.section3__fontext {
+  display: flex;
+  font-size: var(--fontsmall);
+  padding: 0 0 0 6rem;
+}
+.section3__fontext:not(last) {
+  margin-bottom: 1rem;
+}
+.section3__fontext span {
+  padding-left: 0.8rem;
+}
+.section3__fontext .fa {
+  font-size: 2rem;
+  color: green;
+}
+
+.Heading {
+  font-size: var(--fontBig);
+  text-align: center;
+  padding: 0 0 2rem 0;
+  color: var(--headingColor);
+}
+
+.trimmer {
+  width: 80rem;
+  margin-left: 10rem;
+  padding: var(--pad1);
+}
+
+.section4__package {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  text-align: center;
+}
+.section4__package-card {
+  width: 30rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+}
+.section4__package-card-heading1 {
+  font-size: 4rem;
+  color: var(--headingColor);
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+.section4__package-card-para1 {
+  font-size: var(--fontsmall);
+  text-align: center;
+  padding: var(--pad1);
+  padding-top: 3rem;
+  font-weight: 400;
+}
+.section4__package-card-order {
+  display: flex;
+  margin: -2rem 7rem 0 7rem;
+  gap: 1rem;
+  font-size: 1.8rem;
+  align-items: center;
+  background-color: green;
+  border-radius: 1rem;
+  justify-content: center;
+}
+.section4__package-card-strike {
+  font-size: 2rem;
+  color: #e05050;
+  padding: 1rem 0;
+}
+
+.inner {
+  font-size: 2.5rem;
+  color: green;
+  padding: 2rem 0;
+}
+
+.imagWidth {
+  width: 20rem;
+  margin-left: 2rem;
+}
+
+.section5__drop1 {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 2rem;
+  margin-top: -1rem;
+}
+.section5__counter {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem 0;
+}
+.section5__counter-count {
+  background-color: #e05050;
+  padding: 3rem;
+  border-radius: 2.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.section6 {
+  padding: 3rem 0;
+}
+.section6__imagecard {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.section6__imagecard-card1 {
+  width: 25rem;
+  border-radius: 0.9rem;
+}
+
+.section7__form {
+  padding: 0 3rem;
+}
+.section7__forminfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.section7__forminfo label {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.section7__forminfo textarea {
+  font-size: 2rem;
+}
+.section7__forminfo input {
+  font-size: 2rem;
+  padding: 1rem 0;
+  padding-left: 0.3rem;
+  border-radius: 0.4rem;
+}
+.section7__forminfo select {
+  font-size: 2rem;
+  padding: 1rem 0;
+  padding-left: 0.3rem;
+  border-radius: 0.4rem;
+}
+
+button a {
+  color: #fff;
+}
+
+.actionButton {
+  background-color: var(--btn);
+  font-size: var(--fontsmall);
+  color: #fff;
+  padding: 0.8rem;
+  margin-left: 40rem;
+  border: 5px solid white;
+  border-radius: 1rem;
+}
+.actionButton .fa {
+  padding-right: 0.6rem;
+}
+
+.cardButton {
+  background-color: var(--btn);
+  font-size: var(--fontsmall);
+  color: #fff;
+  padding: 0.8rem;
+  margin-left: 2rem;
+  border: 5px solid white;
+  border-radius: 1rem;
+}
+.cardButton .fa {
+  padding-right: 0.6rem;
+}
+
+.submission {
+  width: 70rem;
+  padding: 1.3rem;
+  margin-top: 1rem;
+  margin-left: 8rem;
+  background-color: green;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 1.5rem;
+}
+.submission .fa {
+  padding-right: 0.6rem;
+}/*# sourceMappingURL=style.css.map */

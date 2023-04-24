@@ -1,0 +1,30 @@
+@use "../utils";
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: utils.$fonts;
+  background-color: orangered;
+}
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+  background-color: var(--bgcolor);
+}
+.mar {
+  background-color: green;
+  font-size: 2rem;
+  text-align: center;
+  margin: -1rem 0;
+  padding: -2rem 0;
+}
